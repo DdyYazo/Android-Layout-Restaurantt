@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 RadioButton radioButton = findViewById(checkedId);
-                String texto = "Su comida es ";
+                String texto = "Su pedido es ";
                 String pedido = "";
                 if (radioButton.getText().equals("Frito")) {
                     pedido = "Huevos fritos";
