@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:layout_marginBottom="19dp"
+        android:drawableLeft="@drawable/baseline_food_bank_24"
+        android:drawablePadding="10dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Restaurante brifdress"
+        android:textColor="#786414"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="418dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="100dp"
+        android:background="#786414"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="¿Como deseas tu pedido?"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.336">
+
+        <RadioButton
+            android:id="@+id/frito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frito"
+            android:textSize="30sp"
+            android:textStyle="normal" />
+
+        <RadioButton
+            android:id="@+id/cocido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cocido"
+            android:textSize="30sp"
+            android:textStyle="normal" />
+
+        <RadioButton
+            android:id="@+id/revuelto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Revuelto"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/perico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perico"
+            android:textSize="30sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:text=""
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="197dp"
+        android:layout_height="231dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question"
+        app:srcCompat="@drawable/huevo_prod" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
